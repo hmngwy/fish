@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-git clone --bare git@github.com:hmngwy/fish.git
+git clone --bare git@github.com:hmngwy/fish.git $HOME/.cfg
 function config {
    /usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME $@
 }
