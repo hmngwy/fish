@@ -13,8 +13,6 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 
 nvim +PlugClean +PlugInstall +qall
 
-curl -Lks https://raw.githubusercontent.com/hmngwy/fish/master/.config/setup.sh | /usr/bin/bash
-
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ~/.tmux/plugins/tpm/bin/install_plugins
 
