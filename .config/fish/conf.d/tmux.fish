@@ -6,8 +6,3 @@ end
 function __tmux_rename_window_on_hook -e fish_prompt -s CONT -v PWD
     __tmux_rename_window
 end
-
-if status is-interactive
-and not set -q TMUX
-    exec tmux
-end
