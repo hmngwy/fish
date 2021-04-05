@@ -1,5 +1,5 @@
-let g:python_host_prog = '/home/mailmanpat/.pyenv/versions/neovim2/bin/python'
-let g:python3_host_prog = '/home/mailmanpat/.pyenv/versions/neovim3/bin/python'
+let g:python_host_prog = '$HOME/.pyenv/versions/neovim2/bin/python'
+let g:python3_host_prog = '$HOME/.pyenv/versions/neovim3/bin/python'
 let g:ale_enabled = 1
 let g:ale_fix_on_save = 1
 let g:ale_lint_on_save = 1
