@@ -17,4 +17,11 @@ call plug#begin('~/.vim/plugged')
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'dense-analysis/ale'
 Plug 'editorconfig/editorconfig-vim'
+Plug 'kaicataldo/material.vim', { 'branch': 'main' }
 call plug#end()
+
+let $NVIM_TUI_ENABLE_TRUE_COLOR = 1
+set termguicolors
+
+let g:material_terminal_italics = 1
+colorscheme material
