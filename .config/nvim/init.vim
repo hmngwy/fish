@@ -1,25 +1,26 @@
 "define python bin locations
 let g:python_host_prog = '$HOME/.pyenv/versions/neovim2/bin/python'
 let g:python3_host_prog = '$HOME/.pyenv/versions/neovim3/bin/python'
+
+let g:coc_node_path = '/home/mailmanpat/.local/share/nvm/v14.16.1/bin/neovim-node-host'
+
 "define ale settings
 let g:ale_enabled = 1
 let g:ale_fix_on_save = 1
 let g:ale_lint_on_save = 1
+
 "define fixers
 let g:ale_fixers = {
 \   '*': ['remove_trailing_lines', 'trim_whitespace'],
-\   'javascript': ['standard'],
-\   'typescript': ['ts-standard'],
 \   'json': ['fixjson'],
 \   'python': ['black'],
-\}
-"define linters
-let g:ale_linters = {
-\   'javascript': ['standard'],
 \}
 
 "define plugins
 call plug#begin('~/.vim/plugged')
+" Use release branch (recommend)
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'dense-analysis/ale'
 Plug 'editorconfig/editorconfig-vim'
@@ -36,3 +37,6 @@ colorscheme material
 
 "enable line numbers
 set number
+
+"enable mouse
+set mouse=a
