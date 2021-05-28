@@ -14,3 +14,7 @@ if [ $? = 0 ]; then
 fi;
 config checkout
 config config status.showUntrackedFiles no
+config submodule update --init --recursive
+
+cd ~/.asdf/; git checkout "$(git describe --abbrev=0 --tags)"
+mkdir -p ~/.config/fish/completions; ln -s ~/.asdf/completions/asdf.fish ~/.config/fish/completions
