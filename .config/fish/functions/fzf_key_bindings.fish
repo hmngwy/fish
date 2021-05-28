@@ -1,1 +1,0 @@
-/home/mailmanpat/.fzf/shell/key-bindings.fish
