@@ -1,4 +1,4 @@
-if type -q nvm
+if type -q tmux
 
     if not command -s tmux > /dev/null
         echo "tmux: command not found. See https://tmux.github.io/"
