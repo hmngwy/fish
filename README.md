@@ -1,7 +1,7 @@
 ### Pulling Dotfiles
 ```
 sudo apt install curl git software-properties-common
-curl -Lks https://raw.githubusercontent.com/hmngwy/fish/master/.config/bootstrap.sh | /usr/bin/bash
+curl -Lks https://git.io/JGZ3D | /usr/bin/bash
 ```
 
 ### Installing Binaries
