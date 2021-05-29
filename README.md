@@ -1,7 +1,7 @@
 ### Pulling Dotfiles
 ```
 sudo apt update
-sudo apt install curl git software-properties-common
+sudo apt install -y curl git software-properties-common
 curl -Lks https://git.io/JGZ3D | /usr/bin/bash
 ```
 
