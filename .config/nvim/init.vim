@@ -24,6 +24,7 @@ Plug 'dense-analysis/ale'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'itchyny/lightline.vim'
 Plug 'arcticicestudio/nord-vim'
+Plug 'mengelbrecht/lightline-bufferline'
 call plug#end()
 
 "enable proper term colors
@@ -31,9 +32,28 @@ let $NVIM_TUI_ENABLE_TRUE_COLOR = 1
 set termguicolors
 
 "enable material colorscheme
-let g:material_terminal_italics = 1
 colorscheme nord
-let g:lightline = { 'colorscheme': 'wombat' }
+
+"lightline config
+set showtabline=2
+let g:lightline = {
+\   'colorscheme': 'nord',
+\   'active': {
+\     'left': [ [ 'mode', 'paste' ], [ 'readonly', 'filename', 'modified' ] ]
+\   },
+\   'tabline': {
+\     'left': [ ['buffers'] ],
+\     'right': [ ['close'] ]
+\   },
+\   'component_expand': {
+\     'buffers': 'lightline#bufferline#buffers'
+\   },
+\   'component_type': {
+\     'buffers': 'tabsel'
+\   }
+\ }
+
+
 if !has('gui_running')
   set t_Co=256
 endif
