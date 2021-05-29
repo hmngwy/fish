@@ -7,7 +7,7 @@ window:
     x: 20
     y: 20
 shell:
-  program: /usr/bin/fish
+  program: ubuntu2004.exe
 
 colors:
   # Default colors

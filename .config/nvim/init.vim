@@ -22,7 +22,8 @@ call plug#begin('~/.vim/plugged')
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'dense-analysis/ale'
 Plug 'editorconfig/editorconfig-vim'
-Plug 'kaicataldo/material.vim', { 'branch': 'main' }
+Plug 'itchyny/lightline.vim'
+Plug 'arcticicestudio/nord-vim'
 call plug#end()
 
 "enable proper term colors
@@ -31,7 +32,12 @@ set termguicolors
 
 "enable material colorscheme
 let g:material_terminal_italics = 1
-colorscheme material
+colorscheme nord
+let g:lightline = { 'colorscheme': 'wombat' }
+if !has('gui_running')
+  set t_Co=256
+endif
+set noshowmode
 
 "enable line numbers
 set number
