@@ -19,12 +19,13 @@ call plug#begin('~/.vim/plugged')
 " Use release branch (recommend)
 " Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'dense-analysis/ale'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'itchyny/lightline.vim'
 Plug 'arcticicestudio/nord-vim'
 Plug 'mengelbrecht/lightline-bufferline'
+Plug 'rbgrouleff/bclose.vim'
+Plug 'francoiscabrol/ranger.vim'
 call plug#end()
 
 "enable proper term colors
@@ -52,8 +53,6 @@ let g:lightline = {
 \     'buffers': 'tabsel'
 \   }
 \ }
-
-
 if !has('gui_running')
   set t_Co=256
 endif
@@ -61,6 +60,3 @@ set noshowmode
 
 "enable line numbers
 set number
-
-"enable mouse
-set mouse=a

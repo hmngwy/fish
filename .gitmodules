@@ -4,3 +4,6 @@
 [submodule "/home/pat/.tmux/plugins/tpm"]
 	path = /home/pat/.tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm
+[submodule "/home/pat/.fzf"]
+	path = /home/pat/.fzf
+	url = https://github.com/junegunn/fzf.git
