@@ -2,6 +2,12 @@
 let g:python_host_prog = '$VIRTUALFISH_HOME/neovim2/bin/python'
 let g:python3_host_prog = '$VIRTUALFISH_HOME/neovim3/bin/python'
 
+let mapleader = " " " map leader to space
+set timeoutlen=500 " set timeout to 500ms
+map <leader>h :noh<CR>
+map <leader>r :FZF<CR>
+map <leader>w :w<CR>
+
 "define ale settings
 let g:ale_enabled = 1
 let g:ale_fix_on_save = 1
@@ -17,8 +23,9 @@ let g:ale_fixers = {
 "define plugins
 call plug#begin('~/.vim/plugged')
 " Use release branch (recommend)
-" Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'tpope/vim-fugitive'
 Plug 'dense-analysis/ale'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'itchyny/lightline.vim'
@@ -26,6 +33,9 @@ Plug 'arcticicestudio/nord-vim'
 Plug 'mengelbrecht/lightline-bufferline'
 Plug 'rbgrouleff/bclose.vim'
 Plug 'francoiscabrol/ranger.vim'
+Plug '~/.fzf'
+Plug 'junegunn/fzf.vim'
+Plug 'justinmk/vim-sneak'
 call plug#end()
 
 "enable proper term colors
