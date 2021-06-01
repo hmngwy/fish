@@ -3,7 +3,7 @@ services:
     build:
       context: .
       args:
-        user: outpost
+        USER: outpost
     stdin_open: true
     tty: true
     volumes:
