@@ -10,7 +10,7 @@ RUN apt-get update; apt-get install -y --no-install-recommends make build-essent
 ENV USER=outpost
 ENV HOME=/home/$USER
 
-RUN useradd -rm -d $HOME -p '*' -s /bin/bash -g root -G sudo -u 1001 $USER
+RUN useradd -rm -d $HOME -p ' ' -s /bin/bash -g root -G sudo -u 1001 $USER
 RUN passwd --expire $USER
 
 USER $USER
