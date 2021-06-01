@@ -7,7 +7,7 @@ RUN apt-get update; apt-get install -y --no-install-recommends make build-essent
   libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev \
   git bash software-properties-common apt-clone sudo
 
-ENV USER=outpost
+ARG USER=outpost
 ENV HOME=/home/$USER
 
 RUN useradd -rm -d $HOME -p ' ' -s /bin/bash -g root -G sudo -u 1001 $USER
