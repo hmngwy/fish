@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM ubuntu:20.10
 
 ENV DEBIAN_FRONTEND=noninteractive
 
@@ -28,4 +28,4 @@ RUN fish .config/setup/nodejs.fish
 RUN fish .config/setup/neovim.fish
 RUN chown -R pat $HOME
 
-CMD /bin/bash
+CMD /bin/fish
