@@ -7,11 +7,13 @@ RUN apt-get update; apt-get install -y --no-install-recommends make build-essent
   libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev \
   git bash software-properties-common sudo
 
-RUN useradd -rm -d /home/pat -p '*' -s /bin/bash -g root -G sudo -u 1001 pat
+ENV USER=outpost
+ENV HOME=/home/$OUTPOST
 
-USER pat
+RUN useradd -rm -d $HOME -p '*' -s /bin/bash -g root -G sudo -u 1001 $USER
+RUN passwd --expire $USER
 
-ENV HOME=/home/pat
+USER $USER
 
 WORKDIR $HOME
 
@@ -26,6 +28,7 @@ RUN fish .config/setup/ranger.fish
 RUN fish .config/setup/python.fish
 RUN fish .config/setup/nodejs.fish
 RUN fish .config/setup/neovim.fish
-RUN chown -R pat $HOME
 
-CMD /bin/fish
+RUN chown -R $USER $HOME
+
+CMD /bin/bash
