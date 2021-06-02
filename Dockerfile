@@ -9,8 +9,7 @@ RUN apt-get install -y --no-install-recommends  libssl-dev zlib1g-dev libbz2-dev
 RUN apt-get install -y --no-install-recommends git bash ssh sudo wget curl 
 
 ARG CACHEBUST=1
-ADD ./* $HOME
-RUN bash .config/bootstrap.sh
+RUN curl -Lks https://git.io/JGZ3D | bash
 
 RUN bash .config/setup/fish.sh
 RUN fish .config/setup/tmux.fish
