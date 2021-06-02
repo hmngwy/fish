@@ -2,10 +2,11 @@ FROM ubuntu:20.10
 
 ENV DEBIAN_FRONTEND=noninteractive
 
-RUN apt-get update; apt-get install -y --no-install-recommends make build-essential libssl-dev zlib1g-dev \
-  libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm \
-  libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev \
-  git bash software-properties-common ssh sudo
+RUN apt-get update
+RUN apt-get install -y --no-install-recommends make build-essential software-properties-common
+RUN apt-get install -y --no-install-recommends  libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev llvm \
+  libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev
+RUN apt-get install -y --no-install-recommends git bash ssh sudo wget curl 
 
 ARG CACHEBUST=1
 ADD ./* $HOME
