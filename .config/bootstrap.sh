@@ -22,6 +22,3 @@ config submodule update --init --recursive
 cd ~/.asdf/; git checkout "$(git describe --abbrev=0 --tags)"
 mkdir -p ~/.config/fish/completions; ln -s ~/.asdf/completions/asdf.fish ~/.config/fish/completions
 ~/.fzf/install --all
-
-# install docker
-curl -fsSL https://get.docker.com | sh
