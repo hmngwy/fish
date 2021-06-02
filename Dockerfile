@@ -5,13 +5,13 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update; apt-get install -y --no-install-recommends make build-essential libssl-dev zlib1g-dev \
   libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm \
   libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev \
-  git bash software-properties-common apt-clone sudo
+  git bash software-properties-common apt-clone docker sudo
 
 ARG USER=outpost
+ARG PASS=secret
 ENV HOME=/home/$USER
 
-RUN useradd -rm -d $HOME -p ' ' -s /bin/bash -g root -G sudo -u 1001 $USER
-RUN passwd --expire $USER
+RUN useradd -rm -d $HOME -p $(perl -e 'print crypt($ARGV[0], "password")' $PASS) -s /bin/bash -g root -G sudo -u 1001 $USER
 
 USER $USER
 WORKDIR $HOME

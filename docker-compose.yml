@@ -4,6 +4,7 @@ services:
       context: .
       args:
         USER: outpost
+    restart: unless-stopped
     stdin_open: true
     tty: true
     volumes:
