@@ -8,7 +8,8 @@ RUN apt-get update; apt-get install -y --no-install-recommends make build-essent
   git bash software-properties-common apt-clone docker ssh sudo
 
 ARG CACHEBUST=1
-RUN curl -Lks https://git.io/JGZ3D | /bin/bash
+ADD ./* $HOME
+RUN bash .config/bootstrap.sh
 
 RUN bash .config/setup/fish.sh
 RUN fish .config/setup/tmux.fish
