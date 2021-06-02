@@ -1,5 +1,5 @@
 # install submodules
-config submodule update --init --recursive
+dot submodule update --init --recursive
 
 # setup submodules
 cd $HOME/.asdf/; git checkout "$(git describe --abbrev=0 --tags)"
