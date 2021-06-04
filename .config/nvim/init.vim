@@ -5,8 +5,11 @@ let g:python3_host_prog = '$VIRTUALFISH_HOME/neovim3/bin/python'
 let mapleader = " " " map leader to space
 set timeoutlen=500 " set timeout to 500ms
 map <leader>h :noh<CR>
-map <leader>r :FZF<CR>
+map <leader>t :Files<CR>
+map <leader>r :History:<CR>
 map <leader>w :w<CR>
+map <leader>e :bp<CR>
+map <leader>i :bn<CR>
 
 "define ale settings
 let g:ale_enabled = 1
