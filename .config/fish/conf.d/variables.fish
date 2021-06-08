@@ -1,2 +1,2 @@
-set VISUAL nvim
-set EDITOR "$VISUAL"
+set -x VISUAL nvim
+set -x EDITOR "$VISUAL"

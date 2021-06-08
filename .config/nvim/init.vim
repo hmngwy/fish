@@ -2,15 +2,6 @@
 let g:python_host_prog = '$VIRTUALFISH_HOME/neovim2/bin/python'
 let g:python3_host_prog = '$VIRTUALFISH_HOME/neovim3/bin/python'
 
-let mapleader = " " " map leader to space
-set timeoutlen=500 " set timeout to 500ms
-map <leader>h :noh<CR>
-map <leader>t :Files<CR>
-map <leader>r :History:<CR>
-map <leader>w :w<CR>
-map <leader>e :bp<CR>
-map <leader>i :bn<CR>
-
 "define ale settings
 let g:ale_enabled = 1
 let g:ale_fix_on_save = 1
@@ -34,11 +25,10 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'itchyny/lightline.vim'
 Plug 'arcticicestudio/nord-vim'
 Plug 'mengelbrecht/lightline-bufferline'
-Plug 'rbgrouleff/bclose.vim'
-Plug 'francoiscabrol/ranger.vim'
 Plug '~/.fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'justinmk/vim-sneak'
+Plug 'kevinhwang91/rnvimr'
 call plug#end()
 
 "enable proper term colors
@@ -73,3 +63,15 @@ set noshowmode
 
 "enable line numbers
 set number
+
+
+let mapleader = " " " map leader to space
+set timeoutlen=500 " set timeout to 500ms
+map <leader>h :noh<CR>
+map <leader>t :Files<CR>
+map <leader>f :RnvimrToggle<CR>
+map <leader>r :History:<CR>
+map <leader>w :w<CR>
+map <leader>e :bp<CR>
+map <leader>i :bn<CR>
+
