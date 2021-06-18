@@ -1,4 +1,4 @@
 if type -q pip
-  pip install ranger-fm
-  asdf python reshim
+  pip install ranger-fm pynvim ueberzug
+  asdf reshim python
 end

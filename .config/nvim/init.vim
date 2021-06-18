@@ -29,6 +29,7 @@ Plug '~/.fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'justinmk/vim-sneak'
 Plug 'kevinhwang91/rnvimr'
+Plug 'airblade/vim-gitgutter'
 call plug#end()
 
 "enable proper term colors
@@ -74,4 +75,3 @@ map <leader>r :History:<CR>
 map <leader>w :w<CR>
 map <leader>e :bp<CR>
 map <leader>i :bn<CR>
-
