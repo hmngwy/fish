@@ -12,7 +12,7 @@ ENV HOME=/root
 WORKDIR $HOME
 ARG CACHEBUST=arst
 
-RUN curl -Lks https://git.io/JGZ3D | bash
+RUN curl -Lks https://raw.githubusercontent.com/hmngwy/fish/master/.outpost/bootstrap.sh | bash
 
 RUN bash .config/outpost/fish.sh
 RUN fish .config/outpost/submodules.fish
