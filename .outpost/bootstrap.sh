@@ -14,3 +14,7 @@ if [ $? = 0 ]; then
 fi;
 config checkout
 config config status.showUntrackedFiles no
+
+config submodule update --init --recursive
+
+bash .outpost/setup/fish.sh

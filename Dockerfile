@@ -14,12 +14,12 @@ ARG CACHEBUST=arst
 
 RUN curl -Lks https://raw.githubusercontent.com/hmngwy/fish/master/.outpost/bootstrap.sh | bash
 
-RUN bash .config/outpost/fish.sh
-RUN fish .config/outpost/submodules.fish
-RUN fish .config/outpost/tmux.fish
-RUN fish .config/outpost/ranger.fish
-RUN fish .config/outpost/python.fish
-RUN fish .config/outpost/nodejs.fish
-RUN fish .config/outpost/neovim.fish
+RUN bash .config/outpost/setup/fish.sh
+RUN fish .config/outpost/setup/submodules.fish
+RUN fish .config/outpost/setup/tmux.fish
+RUN fish .config/outpost/setup/ranger.fish
+RUN fish .config/outpost/setup/python.fish
+RUN fish .config/outpost/setup/nodejs.fish
+RUN fish .config/outpost/setup/neovim.fish
 
 COPY --from=docker:dind /usr/local/bin/docker /usr/local/bin/
