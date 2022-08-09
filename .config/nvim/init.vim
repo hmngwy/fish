@@ -18,7 +18,18 @@ let g:ale_fixers = {
 call plug#begin('~/.vim/plugged')
 " Use release branch (recommend)
 
-" Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/coc-snippets', {'do': 'yarn install --frozen-lockfile'}
+Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
+Plug 'neoclide/coc-prettier', {'do': 'yarn install --frozen-lockfile'}
+Plug 'neoclide/coc-eslint', {'do': 'yarn install --frozen-lockfile'}
+Plug 'neoclide/coc-tslint', {'do': 'yarn install --frozen-lockfile'}
+Plug 'neoclide/coc-css', {'do': 'yarn install --frozen-lockfile'}
+Plug 'neoclide/coc-lists', {'do': 'yarn install --frozen-lockfile'} " mru and stuff
+Plug 'neoclide/coc-highlight', {'do': 'yarn install --frozen-lockfile'} " color highlighting
+
+Plug 'francoiscabrol/ranger.vim'
+Plug 'rbgrouleff/bclose.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'dense-analysis/ale'
 Plug 'editorconfig/editorconfig-vim'
@@ -28,7 +39,6 @@ Plug 'mengelbrecht/lightline-bufferline'
 Plug '~/.fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'justinmk/vim-sneak'
-Plug 'kevinhwang91/rnvimr'
 Plug 'airblade/vim-gitgutter'
 Plug 'editorconfig/editorconfig-vim'
 call plug#end()
@@ -65,14 +75,3 @@ set noshowmode
 
 "enable line numbers
 set number
-
-
-let mapleader = " " " map leader to space
-set timeoutlen=500 " set timeout to 500ms
-map <leader>h :noh<CR>
-map <leader>t :Files<CR>
-map <leader>f :RnvimrToggle<CR>
-map <leader>r :History:<CR>
-map <leader>w :w<CR>
-map <leader>e :bp<CR>
-map <leader>i :bn<CR>
