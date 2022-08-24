@@ -6,6 +6,7 @@ function config {
 }
 mkdir -p .config-backup
 config checkout
+config config --local status.showUntrackedFiles no
 if [ $? = 0 ]; then
   echo "Checked out config.";
   else
