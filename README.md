@@ -26,7 +26,8 @@ dot push
 ```
 
 ### Desktop Setup Hints
-dwm
+dwm (hmngwy/dwem)
+dmenu (hmngwy/dmenu)
 wezterm
 fish
 brave-browser
