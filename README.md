@@ -24,3 +24,9 @@ dot add .config/...
 dot commit -m ...
 dot push
 ```
+
+### Desktop Setup Hints
+dwm
+wezterm
+fish
+brave-browser
