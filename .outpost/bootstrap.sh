@@ -18,10 +18,12 @@ config config status.showUntrackedFiles no
 
 config submodule update --init --recursive
 
-bash .outpost/setup/fish.sh
+fish .outpost/setup/fisher.fish
+fish .outpost/setup/locale.fish
 fish .outpost/setup/submodules.fish
+fish .outpost/setup/asdf.fish
+fish .outpost/setup/fzf.fish
+fish .outpost/setup/graphql.fish
+fish .outpost/setup/neovim.fish
 fish .outpost/setup/tmux.fish
 fish .outpost/setup/ranger.fish
-fish .outpost/setup/python.fish
-fish .outpost/setup/nodejs.fish
-fish .outpost/setup/neovim.fish
