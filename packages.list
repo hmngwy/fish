@@ -1,0 +1,11 @@
+curl
+git
+base-devel
+neovim
+fish
+openssh
+sudo
+perl
+ruby
+tmux
+libx11
