@@ -1,18 +1,8 @@
 "define python bin locations
-let g:python_host_prog = '$VIRTUALFISH_HOME/neovim2/bin/python'
-let g:python3_host_prog = '$VIRTUALFISH_HOME/neovim3/bin/python'
-
-"define ale settings
-let g:ale_enabled = 1
-let g:ale_fix_on_save = 1
-let g:ale_lint_on_save = 1
-
-"define fixers
-let g:ale_fixers = {
-\   '*': ['remove_trailing_lines', 'trim_whitespace'],
-\   'json': ['fixjson'],
-\   'python': ['black'],
-\}
+let g:python_host_prog = '$HOME/.virtualenvs/neovim2/bin/python'
+let g:python3_host_prog = '$HOME/.virtualenvs/neovim3/bin/python'
+let g:loaded_ruby_provider = 0
+let g:loaded_perl_provider = 0
 
 "define plugins
 call plug#begin('~/.vim/plugged')
