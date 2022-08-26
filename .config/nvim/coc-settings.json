@@ -1,0 +1,25 @@
+{
+  "prettier.requireConfig": true,
+  "tslint.enable": true,
+  "tslint.autoFixOnSave": true,
+  "coc.preferences.formatOnSaveFiletypes": [
+    "css",
+    "markdown",
+    "Markdown",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "languageserver": {
+    "graphql": {
+      "command": "graphql-lsp",
+      "args": ["server", "-m", "stream"],
+      "filetypes": ["typescript", "typescriptreact", "graphql"],
+      "settings": {
+        "graphql-config.load.legacy": true
+      }
+    }
+  }
+
+}
