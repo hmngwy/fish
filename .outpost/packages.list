@@ -9,6 +9,8 @@ file
 findutils
 fish
 flex
+fontconfig
+freetype2
 gawk
 gcc
 gettext
@@ -18,6 +20,8 @@ groff
 gzip
 libtool
 libx11
+libxft
+libxinerama
 m4
 make
 neovim
@@ -32,4 +36,10 @@ sed
 sudo
 texinfo
 tmux
+ttf-dejavu
 which
+man
+xorg-fonts-misc
+xorg-xinit
+xorg-xrdb
+xorg-xfontsel

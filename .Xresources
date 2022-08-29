@@ -48,19 +48,19 @@
 
 dwm.normfgcolor: nord4
 dwm.normbgcolor: nord0
-dwm.normbordercolor: nord10
+dwm.normbordercolor: nord3
 dwm.normfloatcolor: nord15
 dwm.selfgcolor: nord4
 dwm.selbgcolor: nord3
-dwm.selbordercolor: nord10
+dwm.selbordercolor: nord3
 dwm.selfloatcolor: nord15
 dwm.titlenormfgcolor: nord4
 dwm.titlenormbgcolor: nord0
-dwm.titlenormbordercolor: nord10
+dwm.titlenormbordercolor: nord3
 dwm.titlenormfloatcolor: nord15
 dwm.titleselfgcolor: nord4
 dwm.titleselbgcolor: nord3
-dwm.titleselbordercolor: nord10
+dwm.titleselbordercolor: nord3
 dwm.titleselfloatcolor: nord15
 dwm.tagsnormfgcolor: nord4
 dwm.tagsnormbgcolor: nord0
