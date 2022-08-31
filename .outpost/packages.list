@@ -36,10 +36,15 @@ sed
 sudo
 texinfo
 tmux
-ttf-dejavu
 which
 man
 xorg-fonts-misc
 xorg-xinit
 xorg-xrdb
 xorg-xfontsel
+github-cli
+ttf-fira-code
+ttf-dejavu
+
+discord
+bitwarden

@@ -78,3 +78,12 @@ dwm.urgfgcolor: nord0
 dwm.urgbgcolor: nord11
 dwm.urgbordercolor: nord3
 dwm.urgfloatcolor: nord15
+
+slock.background: nord1
+slock.locked: nord0
+slock.input: nord3
+slock.failed: nord11
+slock.capslock: nord13
+slock.message: No touch please. 
+slock.text_color: nord4
+slock.font_name: fixed
