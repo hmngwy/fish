@@ -1,9 +1,6 @@
-### Debian Dependencies
+### Arch Packages
 ```
-sudo apt-get update; sudo apt-get install -y make build-essential software-properties-common \
-  libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev llvm \
-  libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev \
-  git bash ssh sudo wget curl
+pacman -S - < .outpost/packages.list
 ```
 
 
@@ -16,6 +13,8 @@ curl -Lks https://raw.githubusercontent.com/hmngwy/fish/master/.outpost/bootstra
 ### Installing Binaries
 Setup scripts are found in `.config/setup`, they are not platform agnostic, yet.
 
+TODO: use AUR
+
 ### Usage
 The files are simply managed like a bare git repo. `dot` is aliased to `git --git-dir=$HOME/.cfg/ --work-tree=$HOME`.
 
@@ -25,9 +24,8 @@ dot commit -m ...
 dot push
 ```
 
-### Desktop Setup Hints
-dwm (hmngwy/dwem)
-dmenu (hmngwy/dmenu)
+### GUI 
+dwm
+dmenu
+slock
 wezterm
-fish
-brave-browser
