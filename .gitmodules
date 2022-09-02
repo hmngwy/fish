@@ -21,7 +21,7 @@
 	url = git@github.com:hmngwy/dwm-flexipatch.git
 [submodule ".outpost/gui/dwmblocks"]
 	path = .outpost/gui/dwmblocks
-	url = git@github.com:torrinfail/dwmblocks.git
+	url = git@github.com:hmngwy/dwmblocks.git
 [submodule ".outpost/cli/snapd"]
 	path = .outpost/cli/snapd
 	url = https://aur.archlinux.org/snapd.git
