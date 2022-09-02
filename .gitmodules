@@ -19,3 +19,15 @@
 [submodule ".outpost/gui/dwm-flexipatch"]
 	path = .outpost/gui/dwm-flexipatch
 	url = git@github.com:hmngwy/dwm-flexipatch.git
+[submodule ".outpost/gui/dwmblocks"]
+	path = .outpost/gui/dwmblocks
+	url = git@github.com:torrinfail/dwmblocks.git
+[submodule ".outpost/cli/snapd"]
+	path = .outpost/cli/snapd
+	url = https://aur.archlinux.org/snapd.git
+[submodule ".outpost/cli/yay"]
+	path = .outpost/cli/yay
+	url = https://aur.archlinux.org/yay.git
+[submodule ".outpost/gui/surf"]
+	path = .outpost/gui/surf
+	url = https://git.suckless.org/surf

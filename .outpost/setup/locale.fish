@@ -1,4 +1,6 @@
 #!/usr/bin/fish
-sudo sh -c 'echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen'
+sed -i 's:#en_US.UTF-8 UTF-8:en_US.UTF-8 UTF-8:g' /etc/locale.gen
 sudo locale-gen
-
+echo LANG=en_US.UTF-8 >> /etc/locale.conf
+echo LANGUAGE=en_US.UTF-8 >> /etc/locale.conf
+echo LC_ALL=en_US.UTF-8 >> /etc/locale.confS
