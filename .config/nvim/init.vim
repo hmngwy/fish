@@ -60,3 +60,4 @@ set noshowmode
 
 "enable line numbers
 set number
+set relativenumber             " Show relative line numbers

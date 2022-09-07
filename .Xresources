@@ -84,6 +84,11 @@ slock.locked: nord0
 slock.input: nord3
 slock.failed: nord11
 slock.capslock: nord13
-slock.message: No touch please. 
+slock.message: no touchy 
 slock.text_color: nord4
 slock.font_name: fixed
+
+dmenu.background    : nord0
+dmenu.foreground    : nord4
+dmenu.selbackground : nord14
+dmenu.selforeground : nord4
