@@ -63,3 +63,5 @@ dialog
 dhcpcd
 wpa_supplicant
 ifplugd
+xorg-xset
+xorg-xinput
