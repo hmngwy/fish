@@ -30,4 +30,3 @@ fish .outpost/setup/asdf.fish
 fish .outpost/setup/fzf.fish
 fish .outpost/setup/graphql.fish
 fish .outpost/setup/neovim.fish
-fish .outpost/setup/ranger.fish
