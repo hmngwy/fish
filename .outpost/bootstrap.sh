@@ -8,7 +8,7 @@ function config {
    /usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME $@
 }
 
-sudo pacman -S - < .outpost/packages.list
+sudo pacman -Syu - < .outpost/packages.list
 
 mkdir -p .config-backup
 config checkout
@@ -23,7 +23,7 @@ config submodule update --init --recursive
 
 ( cd .outpost/cli/yay; makepkg -si)
 
-sudo yay -S - < .outpost/aur.list
+yay -Syu - < .outpost/aur.list
 
 fish .outpost/setup/fisher.fish
 fish .outpost/setup/asdf.fish
