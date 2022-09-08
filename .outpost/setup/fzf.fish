@@ -1,2 +1,2 @@
 #!/usr/bin/fish
-~/.fzf/install
+$HOME/.fzf/install --all
