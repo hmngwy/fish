@@ -12,22 +12,22 @@
 	url = https://github.com/alexanderjeurissen/ranger_devicons
 [submodule ".outpost/gui/slock-flexipatch"]
 	path = .outpost/gui/slock-flexipatch
-	url = git@github.com:hmngwy/slock-flexipatch.git
+	url = https://github.com/hmngwy/slock-flexipatch
 [submodule ".outpost/gui/dmenu-flexipatch"]
 	path = .outpost/gui/dmenu-flexipatch
-	url = git@github.com:hmngwy/dmenu-flexipatch.git
+	url = https://github.com/hmngwy/dmenu-flexipatch
 [submodule ".outpost/gui/dwm-flexipatch"]
 	path = .outpost/gui/dwm-flexipatch
-	url = git@github.com:hmngwy/dwm-flexipatch.git
+	url = https://github.com/hmngwy/dwm-flexipatch
 [submodule ".outpost/gui/dwmblocks"]
 	path = .outpost/gui/dwmblocks
-	url = git@github.com:hmngwy/dwmblocks.git
+	url = https://git@github.com/hmngwy/dwmblocks
 [submodule ".outpost/cli/snapd"]
 	path = .outpost/cli/snapd
-	url = https://aur.archlinux.org/snapd.git
+	url = https://aur.archlinux.org/snapd
 [submodule ".outpost/cli/yay"]
 	path = .outpost/cli/yay
-	url = https://aur.archlinux.org/yay.git
+	url = https://aur.archlinux.org/yay
 [submodule ".outpost/gui/surf"]
 	path = .outpost/gui/surf
 	url = https://git.suckless.org/surf
