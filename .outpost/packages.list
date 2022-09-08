@@ -45,7 +45,6 @@ xorg-xfontsel
 github-cli
 ttf-fira-code
 ttf-dejavu
-
 discord
 bitwarden
 fuse2
@@ -58,3 +57,9 @@ noto-fonts
 xdotool
 xclip
 maim
+iwd
+netctl
+dialog
+dhcpcd
+wpa_supplicant
+ifplugd
