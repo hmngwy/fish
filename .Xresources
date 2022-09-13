@@ -90,5 +90,10 @@ slock.font_name: fixed
 
 dmenu.background    : nord0
 dmenu.foreground    : nord4
-dmenu.selbackground : nord14
-dmenu.selforeground : nord4
+dmenu.selbackground : nord3
+dmenu.selforeground : nord6
+dmenu.bordercolor   : nord3
+dmenu.selhlbackground   : nord2
+dmenu.selhlforeground   : nord7
+dmenu.hlbackground   : nord1
+dmenu.hlforeground   : nord7

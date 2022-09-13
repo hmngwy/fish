@@ -8,3 +8,4 @@ map <leader>r :History:<CR>
 map <leader>w :w<CR>
 map <leader>e :bp<CR>
 map <leader>i :bn<CR>
+map <leader>q :bd<CR>

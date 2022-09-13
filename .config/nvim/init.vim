@@ -61,3 +61,5 @@ set noshowmode
 "enable line numbers
 set number
 set relativenumber             " Show relative line numbers
+
+autocmd BufRead,BufNewFile *.htm,*.html,*.css setlocal tabstop=2 shiftwidth=2 softtabstop=2

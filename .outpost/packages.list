@@ -65,3 +65,6 @@ wpa_supplicant
 ifplugd
 xorg-xset
 xorg-xinput
+lsusb
+bluez-utils
+rsync
